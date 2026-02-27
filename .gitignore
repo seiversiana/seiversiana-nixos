@@ -7,5 +7,6 @@
 !/seiversiana.nix
 
 !/dotfiles/
+!/dotfiles/.fehbg
 !/dotfiles/.xinitrc
 !/dotfiles/bg.png

@@ -38,6 +38,7 @@ in {
     ];
 
     file = {
+      ".fehbg".source = ./dotfiles/.fehbg;
       ".xinitrc".source = ./dotfiles/.xinitrc;
       "bg.png".source = ./dotfiles/bg.png;
     };
