@@ -221,4 +221,9 @@ in {
     "x-scheme-handler/about" = "firefox.desktop";
     "x-scheme-handler/unknown" = "firefox.desktop";
   };
+
+  xdg.userDirs = {
+    enable = true;
+    createDirectories = true;
+  };
 }
