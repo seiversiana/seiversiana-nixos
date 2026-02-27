@@ -8,33 +8,41 @@ in {
     username = "seiversiana";
     homeDirectory = "/home/seiversiana";
     packages = with pkgs; [
+      # fonts
       iosevka
       noto-fonts
       noto-fonts-cjk-sans
       noto-fonts-color-emoji
-      btop
+      # downloads
       qbittorrent
       nicotine-plus
+      # audio
+      easyeffects
       ffmpeg_7-full
-      rsgain
-      kid3-qt
       flacon
       sacd
+      kid3-qt
+      rsgain
+      ardour
+      lsp-plugins
       qpwgraph
-      spek
-      flameshot
-      xev
-      easyeffects
-      ungoogled-chromium
-      ltspice
+      # coding
       typst
       tinymist
-      file-roller
       rustup
+      # visuals
       inkscape
       vlc
+      # passwords
       gopass
       gopass-hibp
+      # others
+      xev
+      btop
+      flameshot
+      file-roller
+      ungoogled-chromium
+      ltspice
     ];
 
     file = {
