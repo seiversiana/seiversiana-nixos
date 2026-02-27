@@ -135,6 +135,9 @@ in {
     profiles.default = {
       isDefault = true;
       settings = {
+        "browser.shell.checkDefaultBrowser" = false;
+        "signon.rememberSignons" = false;
+        "extensions.InstallTrigger.enabled" = false;
         "extensions.autoDisableScopes" = 0;
       };
       extensions.packages = with pkgs.nur.repos.rycee.firefox-addons; [
