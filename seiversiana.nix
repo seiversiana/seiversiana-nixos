@@ -36,6 +36,10 @@ in {
       gopass
       gopass-hibp
     ];
+
+    file = {
+      ".xinitrc".source = "./.xinitrc";
+    };
   };
 
   fonts.fontconfig.enable = true;

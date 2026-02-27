@@ -5,3 +5,6 @@
 !/flake.nix
 !/configuration.nix
 !/seiversiana.nix
+
+!/dotfiles/
+!/dotfiles/.xinitrc

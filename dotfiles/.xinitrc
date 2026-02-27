@@ -1,0 +1,3 @@
+lxpolkit &
+
+exec i3
