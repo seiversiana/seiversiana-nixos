@@ -76,7 +76,7 @@
 
   programs.thunar = {
     enable = true;
-    plugins = with pkgs; [ thunar-archive-plugin ];
+    plugins = with pkgs.xfce; [ thunar-archive-plugin ];
   };
 
   services.gvfs.enable = true; 
