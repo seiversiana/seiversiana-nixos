@@ -39,6 +39,7 @@ in {
 
     file = {
       ".xinitrc".source = ./dotfiles/.xinitrc;
+      "Pictures/bg.png".source = ./dotfiles/bg.png;
     };
   };
 
