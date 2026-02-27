@@ -63,7 +63,7 @@ in {
         "${modifier}+Return" = "exec ${terminal}";
         "${modifier}+Shift+q" = "kill";
         "${modifier}+Shift+d" = "exec rofi -show drun";
-        "${modifier}+p" = "exec rofi-pass";
+        "${modifier}+p" = "exec gopass ls --flat | dmenu | xargs --no-run-if-empty gopass show -c";
         "${modifier}+j" = "focus left";
         "${modifier}+k" = "focus down";
         "${modifier}+l" = "focus up";
