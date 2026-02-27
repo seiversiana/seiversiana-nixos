@@ -38,7 +38,7 @@ in {
     ];
 
     file = {
-      ".xinitrc".source = "./.xinitrc";
+      ".xinitrc".source = ./dotfiles/.xinitrc;
     };
   };
 
