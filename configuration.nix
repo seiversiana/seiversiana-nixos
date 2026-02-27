@@ -40,7 +40,6 @@
     isNormalUser = true;
     description = "Nile Jocson";
     extraGroups = [ "networkmanager" "wheel" ];
-    packages = with pkgs; [];
   };
 
   nixpkgs.config.allowUnfree = true;
@@ -56,6 +55,7 @@
     tmux
     brightnessctl
     lxsession
+    tree
   ];
 
   programs.gnupg.agent = {
