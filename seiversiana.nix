@@ -29,8 +29,7 @@ in {
       typst
       tinymist
       rustup
-      ruby
-      jekyll
+      zola
       # visuals
       krita
       vlc
