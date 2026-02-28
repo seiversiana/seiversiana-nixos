@@ -4,6 +4,7 @@
 
 !/flake.nix
 !/configuration.nix
+!/hardware-configuration.nix
 !/seiversiana.nix
 
 !/dotfiles/
