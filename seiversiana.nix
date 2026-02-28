@@ -29,6 +29,8 @@ in {
       typst
       tinymist
       rustup
+      ruby
+      bundler
       # visuals
       inkscape
       vlc
