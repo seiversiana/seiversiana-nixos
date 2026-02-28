@@ -30,6 +30,7 @@ in {
       tinymist
       rustup
       ruby
+      jekyll
       # visuals
       krita
       vlc
