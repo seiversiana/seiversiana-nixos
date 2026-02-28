@@ -29,9 +29,9 @@ in {
       typst
       tinymist
       rustup
-      bundler
+      ruby
       # visuals
-      inkscape
+      krita
       vlc
       # passwords
       gopass
