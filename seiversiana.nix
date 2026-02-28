@@ -208,7 +208,7 @@ in {
             "equalizer#0"
           ];
           "equalizer#0" = {
-            "balance" = 22.5;
+            "balance" = 25;
           };
         };
       };
