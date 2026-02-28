@@ -17,7 +17,6 @@ in {
       qbittorrent
       nicotine-plus
       # audio
-      easyeffects
       ffmpeg_7-full
       flacon
       sacd
@@ -195,6 +194,24 @@ in {
         "[typst]"."editor.tabSize" = 4;
       };
     };
+  };
+
+  services.easyeffects = {
+    enable = true;
+    extraPresets = {
+      default = {
+        output = {
+          blocklist = [];
+          "plugins_order" = [
+            "equalizer#0"
+          ];
+          "equalizer#0" = {
+            "balance": 22.5;
+          };
+        };
+      };
+    };
+    preset = "default";
   };
 
   services.mpd = {
