@@ -220,7 +220,7 @@ in {
     enable = true;
     musicDirectory = "${config.home.homeDirectory}/Music";
     extraConfig = ''
-      replaygain "auto"
+      replaygain "track"
       audio_output {
         type "pipewire"
         name "PipeWire Sound Server"
