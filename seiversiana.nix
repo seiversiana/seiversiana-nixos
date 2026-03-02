@@ -232,7 +232,7 @@ in {
   services.listenbrainz-mpd = {
     enable = true;
     submission = {
-      token_file = "${comfig.home.homeDirectory}/listenbrainz_token";
+      token_file = "${config.home.homeDirectory}/listenbrainz_token";
     };
   };
 
