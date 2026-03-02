@@ -238,6 +238,8 @@ in {
     };
   };
 
+  services.mpd-discord-rpc.enable = true;
+
   programs.rmpc.enable = true;
 
   programs.feh.enable = true;
