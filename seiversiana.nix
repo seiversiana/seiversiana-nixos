@@ -43,6 +43,7 @@ in {
       file-roller
       ungoogled-chromium
       ltspice
+      vesktop
     ];
 
     file = {
