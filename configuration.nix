@@ -63,6 +63,7 @@
   programs.gnupg.agent = {
      enable = true;
      enableSSHSupport = true;
+     pinentryPackage = pkgs.pinentry-qt;
   };
 
   services.openssh.enable = true;
