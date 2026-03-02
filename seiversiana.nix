@@ -206,7 +206,7 @@ in {
       minimizeToTray = true;
       discordBranch = "stable";
     };
-  }
+  };
 
   services.easyeffects = {
     enable = true;
