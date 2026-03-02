@@ -39,6 +39,7 @@ in {
       # others
       xev
       btop
+      smartmontools
       flameshot
       file-roller
       ungoogled-chromium
