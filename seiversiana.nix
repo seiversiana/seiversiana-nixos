@@ -44,7 +44,6 @@ in {
       file-roller
       ungoogled-chromium
       ltspice
-      vesktop
     ];
 
     file = {
@@ -199,6 +198,15 @@ in {
       };
     };
   };
+
+  programs.vesktop = {
+    enable = true;
+    settings = {
+      arRPC = true;
+      minimizeToTray = true;
+      discordBranch = "stable";
+    };
+  }
 
   services.easyeffects = {
     enable = true;
