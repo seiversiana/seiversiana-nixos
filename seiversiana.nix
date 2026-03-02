@@ -229,13 +229,10 @@ in {
     '';
   };
 
-  services.mpdscribble = {
+  services.listenbrainz-mpd = {
     enable = true;
-    endpoints = {
-      "listenbrainz" = {
-        username = "seiversiana";
-        passwordFile = "${config.home.homeDirectory}/listenbrainz_password";
-      };
+    submission = {
+      token_file = "${comfig.home.homeDirectory}/listenbrainz_token";
     };
   };
 
