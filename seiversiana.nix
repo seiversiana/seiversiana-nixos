@@ -231,8 +231,10 @@ in {
 
   services.listenbrainz-mpd = {
     enable = true;
-    submission = {
-      token_file = "${config.home.homeDirectory}/listenbrainz_token";
+    settings = {
+        submission = {
+          token_file = "${config.home.homeDirectory}/listenbrainz_token";
+      };
     };
   };
 
