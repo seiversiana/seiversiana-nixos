@@ -1,91 +1,91 @@
 { config, pkgs, ... }:
 
 {
-  system.stateVersion = "25.11";
+	system.stateVersion = "25.11";
 
-  imports = [
-      ./hardware-configuration.nix
-  ];
+	imports = [
+		./hardware-configuration.nix
+	];
 
-  boot.loader.systemd-boot.enable = true;
-  boot.loader.efi.canTouchEfiVariables = true;
+	boot.loader.systemd-boot.enable = true;
+	boot.loader.efi.canTouchEfiVariables = true;
 
-  nix.settings.experimental-features = [ "nix-command" "flakes" ];
+	nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
-  networking.hostName = "seiversiana-nixos";
-  networking.networkmanager.enable = true;
+	networking.hostName = "seiversiana-nixos";
+	networking.networkmanager.enable = true;
 
-  time.timeZone = "Asia/Manila";
+	time.timeZone = "Asia/Manila";
 
-  i18n.defaultLocale = "en_US.UTF-8";
+	i18n.defaultLocale = "en_US.UTF-8";
 
-  i18n.extraLocaleSettings = {
-    LC_ADDRESS = "en_US.UTF-8";
-    LC_IDENTIFICATION = "en_US.UTF-8";
-    LC_MEASUREMENT = "en_US.UTF-8";
-    LC_MONETARY = "en_US.UTF-8";
-    LC_NAME = "en_US.UTF-8";
-    LC_NUMERIC = "en_US.UTF-8";
-    LC_PAPER = "en_US.UTF-8";
-    LC_TELEPHONE = "en_US.UTF-8";
-    LC_TIME = "en_US.UTF-8";
-  };
+	i18n.extraLocaleSettings = {
+		LC_ADDRESS = "en_US.UTF-8";
+		LC_IDENTIFICATION = "en_US.UTF-8";
+		LC_MEASUREMENT = "en_US.UTF-8";
+		LC_MONETARY = "en_US.UTF-8";
+		LC_NAME = "en_US.UTF-8";
+		LC_NUMERIC = "en_US.UTF-8";
+		LC_PAPER = "en_US.UTF-8";
+		LC_TELEPHONE = "en_US.UTF-8";
+		LC_TIME = "en_US.UTF-8";
+	};
 
-  services.xserver.xkb = {
-    layout = "us";
-    variant = "";
-  };
+	services.xserver.xkb = {
+		layout = "us";
+		variant = "";
+	};
 
-  users.users.seiversiana = {
-    isNormalUser = true;
-    description = "Nile Jocson";
-    extraGroups = [ "networkmanager" "wheel" ];
-  };
+	users.users.seiversiana = {
+		isNormalUser = true;
+		description = "Nile Jocson";
+		extraGroups = [ "networkmanager" "wheel" ];
+	};
 
-  nixpkgs.config.allowUnfree = true;
- 
-  security.polkit.enable = true;
+	nixpkgs.config.allowUnfree = true;
 
-  environment.systemPackages = with pkgs; [
-    gcc
-    clang
-    clang-tools
-    cmake
-    vim
-    tmux
-    brightnessctl
-    lxsession
-    tree
-  ];
+	security.polkit.enable = true;
 
-  programs.dconf.enable = true;
+	environment.systemPackages = with pkgs; [
+		gcc
+		clang
+		clang-tools
+		cmake
+		vim
+		tmux
+		brightnessctl
+		lxsession
+		tree
+	];
 
-  programs.gnupg.agent = {
-     enable = true;
-     enableSSHSupport = true;
-     pinentryPackage = pkgs.pinentry-qt;
-  };
+	programs.dconf.enable = true;
 
-  services.openssh.enable = true;
+	programs.gnupg.agent = {
+		 enable = true;
+		 enableSSHSupport = true;
+		 pinentryPackage = pkgs.pinentry-qt;
+	};
 
-  services.xserver = {
-    enable = true;
-    displayManager.startx.enable = true;
-  };
+	services.openssh.enable = true;
 
-  services.displayManager.ly.enable = true;
+	services.xserver = {
+		enable = true;
+		displayManager.startx.enable = true;
+	};
 
-  programs.steam.enable = true;
+	services.displayManager.ly.enable = true;
 
-  programs.thunar = {
-    enable = true;
-    plugins = with pkgs.xfce; [ thunar-archive-plugin ];
-  };
+	programs.steam.enable = true;
 
-  services.gvfs.enable = true; 
+	programs.thunar = {
+		enable = true;
+		plugins = with pkgs.xfce; [ thunar-archive-plugin ];
+	};
 
-  nix.settings = {
-    substituters = [ "https://ezkea.cachix.org" ];
-    trusted-public-keys = [ "ezkea.cachix.org-1:ioBmUbJTZIKsHmWWXPe1FSFbeVe+afhfgqgTSNd34eI=" ];
-  };
+	services.gvfs.enable = true;
+
+	nix.settings = {
+		substituters = [ "https://ezkea.cachix.org" ];
+		trusted-public-keys = [ "ezkea.cachix.org-1:ioBmUbJTZIKsHmWWXPe1FSFbeVe+afhfgqgTSNd34eI=" ];
+	};
 }
