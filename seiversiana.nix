@@ -41,7 +41,7 @@ in {
 			btop
 			smartmontools
 			flameshot
-			file-roller
+			peazip
 			ungoogled-chromium
 			ltspice
 		];
