@@ -26,6 +26,8 @@ in {
 			lsp-plugins
 			qpwgraph
 			# coding
+			gdb
+			lldb
 			typst
 			tinymist
 			rustup
