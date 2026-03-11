@@ -34,6 +34,7 @@ in {
 			zola
 			# visuals
 			krita
+			inkscape
 			vlc
 			# passwords
 			gopass
