@@ -221,7 +221,8 @@ in {
 						"equalizer#0"
 					];
 					"equalizer#0" = {
-						"balance" = 25;
+						"balance" = 35;
+						"output-gain" = 2.5;
 					};
 				};
 			};
