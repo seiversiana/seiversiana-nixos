@@ -13,9 +13,11 @@ in {
 			noto-fonts
 			noto-fonts-cjk-sans
 			noto-fonts-color-emoji
+
 			# downloads
 			qbittorrent
 			nicotine-plus
+
 			# audio
 			ffmpeg_7-full
 			flacon
@@ -25,6 +27,8 @@ in {
 			ardour
 			lsp-plugins
 			qpwgraph
+			musescore
+
 			# coding
 			gdb
 			lldb
@@ -32,13 +36,16 @@ in {
 			tinymist
 			rustup
 			zola
+
 			# visuals
 			krita
 			inkscape
 			vlc
+
 			# passwords
 			gopass
 			gopass-hibp
+
 			# others
 			xev
 			btop
