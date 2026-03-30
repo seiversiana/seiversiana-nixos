@@ -193,17 +193,18 @@ in {
 				tamasfe.even-better-toml
 			];
 			userSettings = {
-				"workbench.colorTheme" = "Winter is Coming (Dark Blue)";
+				"chat.disableAIFeatures" = true;
 				"editor.fontLigatures" = true;
 				"editor.fontFamily" = "Iosevka Extended";
-				"workbench.tree.indent" = 20;
-				"files.trimTrailingWhitespace" = true;
+				"editor.insertSpaces" = false;
 				"editor.renderWhitespace" = "all";
+				"editor.rulers" = [80 120];
+				"workbench.colorTheme" = "Winter is Coming (Dark Blue)";
+				"workbench.tree.indent" = 20;
 				"files.insertFinalNewline" = true;
 				"files.trimFinalNewlines" = true;
-				"editor.insertSpaces" = false;
+				"files.trimTrailingWhitespace" = true;
 				"C_Cpp.intelliSenseEngine" = "disabled";
-				"chat.disableAIFeatures" = true;
 				"[typst]"."editor.tabSize" = 4;
 			};
 		};
