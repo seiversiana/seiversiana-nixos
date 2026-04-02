@@ -184,19 +184,21 @@ in {
 			extensions = with pkgs.vscode-extensions; [
 				streetsidesoftware.code-spell-checker
 				johnpapa.winteriscoming
+				eamodio.gitlens
 				ms-vscode.cpptools
 				llvm-vs-code-extensions.vscode-clangd
 				ms-vscode.cmake-tools
 				twxs.cmake
-				eamodio.gitlens
 				myriad-dreamin.tinymist
 				rust-lang.rust-analyzer
 				tamasfe.even-better-toml
+				jnoortheen.nix-ide
 			];
 			userSettings = {
 				"chat.disableAIFeatures" = true;
 				"editor.fontLigatures" = true;
 				"editor.fontFamily" = "Iosevka Extended";
+				"editor.inlayHints.enabled" = "offUnlessPressed";
 				"editor.insertSpaces" = false;
 				"editor.renderWhitespace" = "all";
 				"editor.rulers" = [80 120];
