@@ -36,6 +36,7 @@ in {
 			tinymist
 			rustup
 			zola
+			android-studio-full
 
 			# visuals
 			krita
