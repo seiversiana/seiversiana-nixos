@@ -47,6 +47,9 @@ in {
 			gopass
 			gopass-hibp
 
+			# gaming
+			retroarch-full
+
 			# others
 			xev
 			btop
