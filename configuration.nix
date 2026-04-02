@@ -42,7 +42,10 @@
 		extraGroups = [ "networkmanager" "wheel" ];
 	};
 
-	nixpkgs.config.allowUnfree = true;
+	nixpkgs.config = {
+		allowUnfree = true;
+		android_sdk.accept_license = true;
+	};
 
 	security.polkit.enable = true;
 
