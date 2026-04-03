@@ -51,6 +51,7 @@ in {
 			retroarch-full
 
 			# others
+			rsync
 			xev
 			btop
 			smartmontools
