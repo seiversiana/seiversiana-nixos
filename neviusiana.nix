@@ -5,8 +5,8 @@ let
 in {
 	home = {
 		stateVersion = "25.11";
-		username = "seiversiana";
-		homeDirectory = "/home/seiversiana";
+		username = "neviusiana";
+		homeDirectory = "/home/neviusiana";
 		packages = with pkgs; [
 			# fonts
 			iosevka
@@ -67,7 +67,7 @@ in {
 			".fehbg".source = ./dotfiles/.fehbg;
 			".xinitrc".source = ./dotfiles/.xinitrc;
 			"bg.png".source = ./dotfiles/bg.png;
-			"Music".source = config.lib.file.mkOutOfStoreSymlink "/home/seiversiana/other/Music";
+			"Music".source = config.lib.file.mkOutOfStoreSymlink "/home/neviusiana/other/Music";
 		};
 	};
 
@@ -149,7 +149,7 @@ in {
 		enable = true;
 		settings = {
 			user.name = "Nile Jocson";
-			user.email = "seiversiana@gmail.com";
+			user.email = "neviusiana@gmail.com";
 			user.signingkey = "87DD01B331F5544C";
 			init.defaultBranch = "main";
 			commit.gpgSign = true;

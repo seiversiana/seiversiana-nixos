@@ -1,5 +1,5 @@
 {
-	description = "seiversiana-nixos flake";
+	description = "neviusiana-nixos flake";
 
 	inputs = {
 		nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
@@ -18,7 +18,7 @@
 	};
 
 	outputs = inputs@{ nixpkgs, home-manager, nur, aagl, ... }: {
-		nixosConfigurations.seiversiana-nixos = nixpkgs.lib.nixosSystem {
+		nixosConfigurations.neviusiana-nixos = nixpkgs.lib.nixosSystem {
 			modules = [
 				./configuration.nix
 				home-manager.nixosModules.home-manager {
@@ -26,7 +26,7 @@
 						backupFileExtension = "backup";
 						useGlobalPkgs = true;
 						useUserPackages = true;
-						users.seiversiana = import ./seiversiana.nix;
+						users.neviusiana = import ./neviusiana.nix;
 					};
 				}
 				nur.modules.nixos.default

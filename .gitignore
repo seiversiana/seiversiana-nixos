@@ -6,7 +6,7 @@
 !/flake.nix
 !/configuration.nix
 !/hardware-configuration.nix
-!/seiversiana.nix
+!/neviusiana.nix
 
 !/dotfiles/
 !/dotfiles/.bashrc

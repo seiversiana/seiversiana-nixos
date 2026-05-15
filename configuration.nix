@@ -12,7 +12,7 @@
 
 	nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
-	networking.hostName = "seiversiana-nixos";
+	networking.hostName = "neviusiana-nixos";
 	networking.networkmanager.enable = true;
 
 	time.timeZone = "Asia/Manila";
@@ -36,7 +36,7 @@
 		variant = "";
 	};
 
-	users.users.seiversiana = {
+	users.users.neviusiana = {
 		isNormalUser = true;
 		description = "Nile Jocson";
 		extraGroups = [ "networkmanager" "wheel" ];

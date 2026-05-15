@@ -21,7 +21,7 @@
 		options = ["fmask=0077" "dmask=0077"];
 	};
 
-	fileSystems."/home/seiversiana/other" = {
+	fileSystems."/home/neviusiana/other" = {
 		device = "/dev/disk/by-label/other";
 		fsType = "ext4";
 	};
