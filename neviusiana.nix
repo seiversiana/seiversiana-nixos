@@ -150,7 +150,7 @@ in {
 		settings = {
 			user.name = "Nile Jocson";
 			user.email = "neviusiana@gmail.com";
-			user.signingkey = "87DD01B331F5544C";
+			user.signingkey = "6DA609B2F05BFCED";
 			init.defaultBranch = "main";
 			commit.gpgSign = true;
 			tag.gpgSign = true;
